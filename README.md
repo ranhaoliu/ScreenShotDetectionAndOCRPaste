@@ -1,6 +1,7 @@
 # ScreenShotDetection
 
 #### Description
+小米12 和小米平板5测试能够正常使用
 注意要把这个app 开成小窗模式才能使用
 
 屏幕截图监听
