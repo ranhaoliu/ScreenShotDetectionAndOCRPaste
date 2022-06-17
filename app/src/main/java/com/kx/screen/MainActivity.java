@@ -113,6 +113,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 String content="";
                 updateHint();
+<<<<<<< HEAD
+=======
+                //可以注释掉
+>>>>>>> 截屏检测并上传到阿里OCR接口然后把识别结果放入粘贴板
                 Toast.makeText(MainActivity.this, "image path:" + imagePath.toString(), Toast.LENGTH_LONG).show();
 
                 try {
@@ -131,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+                //不想要这个弹出的框可以把这行注释掉
                 Toast.makeText(MainActivity.this, content, Toast.LENGTH_LONG).show();
 
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);

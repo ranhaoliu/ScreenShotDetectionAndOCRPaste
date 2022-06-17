@@ -73,42 +73,5 @@ public class Sample {
         return content;
     }
 
-
-
-    /*
-    public static void main(String[] args_) throws Exception {
-        java.util.List<String> args = java.util.Arrays.asList(args_);
-        com.aliyun.ocr_api20210707.Client client = Sample.createClient("LTAI4FipKuqDpQRrEbDbtf1j", "n6xO8M2akLhMojl28gk21ll5jMMzT8");
-        RecognizeGeneralRequest recognizeGeneralRequest = new RecognizeGeneralRequest();
-        FileInputStream inStream = new FileInputStream("C:\\Users\\Administrator\\Pictures\\1111.png");
-
-//        //byte数组用于存放图片字节数据
-//        byte[] buff = new byte[inStream.available()];
-//
-//        inStream.read(buff);
-        recognizeGeneralRequest.setBody(inStream);
-        RuntimeOptions runtime = new RuntimeOptions();
-        try {
-            // 复制代码运行请自行打印 API 的返回值
-            RecognizeGeneralResponse response =client.recognizeGeneralWithOptions(recognizeGeneralRequest, runtime);
-            RecognizeGeneralResponseBody body= response.getBody();
-            Integer code= response.getStatusCode();
-            System.out.println(code);
-//            System.out.println(body.data);
-            //将json字符串转json对象，Feature.OrderedField防止乱序
-            JSONObject jsonObject = JSON.parseObject(body.data, Feature.OrderedField);
-            String content = jsonObject.get("content").toString();
-            System.out.println("content is: "+content);
-        } catch (TeaException error) {
-            // 如有需要，请打印 error
-            com.aliyun.teautil.Common.assertAsString(error.message);
-        } catch (Exception _error) {
-            TeaException error = new TeaException(_error.getMessage(), _error);
-            // 如有需要，请打印 error
-            com.aliyun.teautil.Common.assertAsString(error.message);
-        }
-    }
-*/
-
 }
 
