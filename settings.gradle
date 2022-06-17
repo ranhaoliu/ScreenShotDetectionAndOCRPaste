@@ -1,0 +1,3 @@
+include ':screen_lib'
+include ':app'
+rootProject.name = "ScreenShotDetection"
