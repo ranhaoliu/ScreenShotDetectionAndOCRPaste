@@ -113,15 +113,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 String content="";
                 updateHint();
-<<<<<<< HEAD
-=======
-                //可以注释掉
->>>>>>> 截屏检测并上传到阿里OCR接口然后把识别结果放入粘贴板
-                Toast.makeText(MainActivity.this, "image path:" + imagePath.toString(), Toast.LENGTH_LONG).show();
 
+                //可以注释掉
+                Toast.makeText(MainActivity.this, "image path:" + imagePath.toString(), Toast.LENGTH_LONG).show();
                 try {
                     ContentResolver contentResolver = getContentResolver();
                     InputStream inputStream = contentResolver.openInputStream(imageUri);
+                    //截屏检测并上传到阿里OCR接口
                     content = takeImageToText(inputStream);
 
                 }catch (IOException e) {
@@ -137,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 //不想要这个弹出的框可以把这行注释掉
                 Toast.makeText(MainActivity.this, content, Toast.LENGTH_LONG).show();
-
+                //把识别结果放入粘贴板
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 //                ClipData textCd = ClipData.newPlainText("kkk", imagePath.toString());
                 ClipData textCd = ClipData.newPlainText("kkk",content);
